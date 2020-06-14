@@ -1,0 +1,69 @@
+<----------
+{"CONTEXT":{"state":"ASKING_REPLY_FEEDBACK","data":{"searche
+dText":"常在外踏青的好友們要注意唷！\n恐怖！只要不小心碰到這種「國際雜草」，你的「鼻子」和「肝」就會開始產生病
+變…一定要記住他的「長相」，現在已經蔓延全台灣，安全島也很多。\nhttps://www.youtube.com/emb
+ed/kaMucfkJqkU ?\n這個在台中高美濕地很多哦！要小心。","foundArticleIds":["AV5
+mMF2xyCdS-nWhuf09"],"selectedArticleId":"AV5mMF2xyCdS-nWhuf0
+9","foundReplies":[{"id":"AVujjW3PyCdS-nWhuYGW","replyConnec
+tionId":"AV5mMF2xyCdS-nWhuf09__AVujjW3PyCdS-nWhuYGW"}],"sele
+ctedReply":{"id":"AVujjW3PyCdS-nWhuYGW","replyConnectionId":
+"AV5mMF2xyCdS-nWhuf09__AVujjW3PyCdS-nWhuYGW"}},"issuedAt":15
+13873613884},"INPUT":{"type":"message","userId":"Uc4857b40c0
+bd8026e1b0xxxxxxxxxxxx","timestamp":1514766620628,"message":
+{"type":"text","id":"7237125763358","text":"現職工程師提供\n\n再一次提醒
+!\n\n省電燈泡的危險性\n～LED 燈泡規則\n一個無知的舉動  \n差點失去了生命\n破碎的燈泡\n絕對不能用吸塵
+器吸\n否則後果更嚴重！\n\nhttps://www.evernote.com/shard/s87/sh/99aee4
+2d-976c-41dc-a0ad-a67148929c93/c72b1569d9fd2dcf \n家居危險，\n\n一
+定要通知所有親友。"}},"OUTPUT":{"context":{"state":"CHOOSING_ARTICLE"
+,"data":{"searchedText":"現職工程師提供\n\n再一次提醒!\n\n省電燈泡的危險性\n～LED
+ 燈泡規則\n一個無知的舉動  \n差點失去了生命\n破碎的燈泡\n絕對不能用吸塵器吸\n否則後果更嚴重！\n\nhtt
+ps://www.evernote.com/shard/s87/sh/99aee42d-976c-41dc-a0ad-a
+67148929c93/c72b1569d9fd2dcf \n家居危險，\n\n一定要通知所有親友。","foundAr
+ticleIds":["5623959580345-rumor"]},"issuedAt":1514766621396}
+,"replies":[{"type":"text","text":"幫您查詢「現職工程師提供\n\n再⋯⋯」的相關回應
+。"},{"type":"text","text":"請問下列文章中，哪一篇是您剛才傳送的訊息呢？"},{"type":
+"template","altText":"選擇請打 1> 港燈現職工程師提供\n\n再一次提醒!\n\n省\n\n若以
+上皆非，請打 0。","template":{"type":"carousel","columns":[{"text":
+"[相似度:91.85%] \n 港燈現職工程師提供\n\n再一次提醒!\n\n省電燈泡的危險性\n～LED 燈泡規則\
+n一個無知的舉動  \n差點失去了生命\n破碎的燈泡\n絕對不能用吸塵器吸\n否則後果更嚴重！\n\nhttps://w
+ww.everno","actions":[{"type":"postback","label":"選擇此則","dat
+a":"{\"input\":1,\"issuedAt\":1514766621396}"}]},{"text":"這裡
+沒有一篇是我傳的訊息。","actions":[{"type":"postback","label":"選擇","dat
+a":"{\"input\":0,\"issuedAt\":1514766621396}"}]}]}}]}}
+---------->
+<----------
+{"CONTEXT":{"state":"CHOOSING_ARTICLE","data":{"searchedText
+":"現職工程師提供\n\n再一次提醒!\n\n省電燈泡的危險性\n～LED 燈泡規則\n一個無知的舉動  \n差點失去
+了生命\n破碎的燈泡\n絕對不能用吸塵器吸\n否則後果更嚴重！\n\nhttps://www.evernote.com/
+shard/s87/sh/99aee42d-976c-41dc-a0ad-a67148929c93/c72b1569d9
+fd2dcf \n家居危險，\n\n一定要通知所有親友。","foundArticleIds":["5623959580
+345-rumor"],"selectedArticleId":"5623959580345-rumor","found
+Replies":[{"id":"AVrscXadtKp96s659CtR","replyConnectionId":"
+5623959580345-rumor__AVrscXadtKp96s659CtR"}],"selectedReply"
+:{"id":"AVrscXadtKp96s659CtR","replyConnectionId":"562395958
+0345-rumor__AVrscXadtKp96s659CtR"}},"issuedAt":1514766621396
+},"INPUT":{"type":"postback","userId":"Uc4857b40c0bd8026e1b0
+xxxxxxxxxxxx","timestamp":1514766627799,"postback":{"data":"
+{\"input\":1,\"issuedAt\":1514766621396}"}},"OUTPUT":{"conte
+xt":{"state":"ASKING_REPLY_FEEDBACK","data":{"searchedText":
+"現職工程師提供\n\n再一次提醒!\n\n省電燈泡的危險性\n～LED 燈泡規則\n一個無知的舉動  \n差點失去了生
+命\n破碎的燈泡\n絕對不能用吸塵器吸\n否則後果更嚴重！\n\nhttps://www.evernote.com/sh
+ard/s87/sh/99aee42d-976c-41dc-a0ad-a67148929c93/c72b1569d9fd
+2dcf \n家居危險，\n\n一定要通知所有親友。","foundArticleIds":["562395958034
+5-rumor"],"selectedArticleId":"5623959580345-rumor","foundRe
+plies":[{"id":"AVrscXadtKp96s659CtR","replyConnectionId":"56
+23959580345-rumor__AVrscXadtKp96s659CtR"}],"selectedReply":{
+"id":"AVrscXadtKp96s659CtR","replyConnectionId":"56239595803
+45-rumor__AVrscXadtKp96s659CtR"}},"issuedAt":1514766628274},
+"replies":[{"type":"text","text":"這則回應認為文章含有不實訊息，理由為："},{"ty
+pe":"text","text":"汞中毒的症狀，不會帶來傷口不癒合跟壞死。\n傷口照片，專業醫師認為確實有可能是燈泡
+燙傷及碎片割傷，但傷口壞死應該是受其他因素影響，與水銀毒性無關；省電燈泡還是相當安全的。"},{"type":"text
+","text":"出處：http://www.nownews.com/n/2012/03/07/4420"},{"ty
+pe":"template","altText":"請問這則回應是否有解答原文章？\n「是」請輸入「y」，「否」請輸入其
+他任何訊息。","template":{"type":"buttons","text":"請問這則回應是否有解答原文章？
+","actions":[{"type":"postback","label":"是","data":"{\"input
+\":\"y\",\"issuedAt\":1514766628274}"},{"type":"postback","l
+abel":"否","data":"{\"input\":\"n\",\"issuedAt\":151476662827
+4}"}]}},{"type":"text","text":"可以到以下網址閱讀其他回應：https://cofacts
+.g0v.tw/article/5623959580345-rumor"}]}}
+---------->
