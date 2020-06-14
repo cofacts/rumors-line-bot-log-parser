@@ -7,6 +7,18 @@ Parses the STDOUT logs emitted by rumors-line-bot
 $ node index.js <Input file / glob> <output csv>
 ```
 
+```javascript
+const { parseToJson } = require('@cofacts/line-bot-log-parser');
+
+const path = 'path/to/201709/01/05/3022.69933758693960.log'
+// or 'path/to/201709/**/*.log'
+parseToJson(path, (data, next) => {
+    console.log(data)
+    next();
+  }, { sequential: true }
+);
+```
+
 ## Input file
 
 It supports 2 formats:
