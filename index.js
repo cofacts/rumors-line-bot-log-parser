@@ -139,6 +139,12 @@ const conversationObjFilter = new Transform({
     callback();
   },
 });
+/**
+ *
+ * @param {string} globFilePath
+ * @param {(data: object, next?: Function) => {}} callback
+ * @param {{sequential:boolean}} options
+ */
 
 const parseToJson = async (globFilePath, callback, options = {}) => {
   const { sequential = true } = options;
@@ -162,6 +168,10 @@ const parseToJson = async (globFilePath, callback, options = {}) => {
         },
       })
     );
+
+  /**
+   * @todo this is no guarantee that all pipe has done
+   */
 
   const promises = [];
   for (let file of inputFiles) {
