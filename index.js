@@ -178,6 +178,42 @@ console.log(`Processing ${inputFiles.length} files to ${outputFilePath}...`);
 inputFiles.forEach(filePath => {
   filePathTofileNameLines.write(filePath);
 });
+const parseToJson = async (globFilePath, callback, options = {}) => {
+  const { sequential = true } = options;
+  const inputFiles = glob.sync(globFilePath);
+
+  console.info(`Processing ${inputFiles.length}...`);
+
+  filePathTofileNameLines
+    .pipe(filenameLineToLineTimestamp)
+    .pipe(lineTimestampToConversationObj)
+    .pipe(
+      new Transform({
+        objectMode: true,
+        transform(conversationObj, encoding, next) {
+          if (sequential) {
+            callback(conversationObj, next);
+          } else {
+            callback(conversationObj);
+            next();
+          }
+        },
+      })
+    );
+
+  const promises = [];
+  for (let file of inputFiles) {
+    const p = new Promise(resolve =>
+      filePathTofileNameLines.write(file, resolve)
+    );
+    if (sequential) {
+      await p;
+    } else {
+      promises.push(p);
+    }
+  }
+  return Promise.all(promises);
+};
 
 /**
  * @param {string} input
@@ -199,3 +235,7 @@ function sha256(input) {
 function collapseLines(str) {
   return (str || '').replace(/\r|\n/gm, '↵');
 }
+
+module.exports = {
+  parseToJson,
+};
