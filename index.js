@@ -7,15 +7,6 @@ const csvStringify = require('csv-stringify');
 const glob = require('glob');
 
 const HEROKU_MODE = process.env.HEROKU || false;
-
-if (!process.argv[3]) {
-  console.info('Please provide input filename.');
-  console.info('Usage: node index.js <input file glob> <output file>');
-  process.exit(1);
-}
-
-const inputFiles = glob.sync(process.argv[2]);
-const outputFilePath = process.argv[3];
 const USER_ID = process.env.USER_ID || false;
 
 const filePathTofileNameLines = new Transform({
@@ -149,35 +140,6 @@ const conversationObjFilter = new Transform({
   },
 });
 
-filePathTofileNameLines
-  .pipe(filenameLineToLineTimestamp)
-  .pipe(lineTimestampToConversationObj)
-  .pipe(conversationObjFilter)
-  .pipe(
-    csvStringify({
-      header: true,
-      columns: [
-        'timestamp',
-        'userIdsha256',
-        // 'input.message.text',
-        // 'context.issuedAt',
-        // 'context.data.searchedText',
-        // 'context.state',
-        'output.context.state',
-        // 'context.data.selectedArticleId',
-        'output.context.data.selectedArticleId',
-        'output.replies',
-      ],
-    })
-  )
-  .pipe(fs.createWriteStream(outputFilePath));
-
-// eslint-disable-next-line no-console
-console.log(`Processing ${inputFiles.length} files to ${outputFilePath}...`);
-
-inputFiles.forEach(filePath => {
-  filePathTofileNameLines.write(filePath);
-});
 const parseToJson = async (globFilePath, callback, options = {}) => {
   const { sequential = true } = options;
   const inputFiles = glob.sync(globFilePath);
@@ -239,3 +201,44 @@ function collapseLines(str) {
 module.exports = {
   parseToJson,
 };
+
+if (require.main === module) {
+  if (!process.argv[3]) {
+    console.info('Please provide input filename.');
+    console.info('Usage: node index.js <input file glob> <output file>');
+    process.exit(1);
+  }
+
+  const inputFiles = glob.sync(process.argv[2]);
+  const outputFilePath = process.argv[3];
+
+  // eslint-disable-next-line no-console
+  console.log(`Processing ${inputFiles.length} files to ${outputFilePath}...`);
+
+  filePathTofileNameLines
+    .pipe(filenameLineToLineTimestamp)
+    .pipe(lineTimestampToConversationObj)
+    .pipe(conversationObjFilter)
+    .pipe(
+      csvStringify({
+        header: true,
+        columns: [
+          'timestamp',
+          'userIdsha256',
+          // 'input.message.text',
+          // 'context.issuedAt',
+          // 'context.data.searchedText',
+          // 'context.state',
+          'output.context.state',
+          // 'context.data.selectedArticleId',
+          'output.context.data.selectedArticleId',
+          'output.replies',
+        ],
+      })
+    )
+    .pipe(fs.createWriteStream(outputFilePath));
+
+  inputFiles.forEach(filePath => {
+    filePathTofileNameLines.write(filePath);
+  });
+}
