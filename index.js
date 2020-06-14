@@ -16,6 +16,7 @@ if (!process.argv[3]) {
 
 const inputFiles = glob.sync(process.argv[2]);
 const outputFilePath = process.argv[3];
+const USER_ID = process.env.USER_ID || false;
 
 const filePathTofileNameLines = new Transform({
   objectMode: true,
@@ -93,6 +94,7 @@ const lineTimestampToConversationObj = new Transform({
       try {
         this.push({
           timestamp: new Date(timestamp).toISOString(),
+          userId: USER_ID ? INPUT.userId : undefined,
           userIdsha256: sha256(INPUT.userId),
           'input.message.text': collapseLines(
             INPUT.message && INPUT.message.text
