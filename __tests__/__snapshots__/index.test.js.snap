@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parseToJson with sequential = false 1`] = `
+Object {
+  "5623959580345-rumor": Object {
+    "context.data.searchedText": "現職工程師提供↵↵再一次提醒!↵↵省電燈泡的危險性↵～LED 燈泡規則↵一個無知的舉動  ↵差點失去了生命↵破碎的燈泡↵絕對不能用吸塵器吸↵否則後果更嚴重！↵↵https://www.evernote.com/shard/s87/sh/99aee42d-976c-41dc-a0ad-a67148929c93/c72b1569d9fd2dcf ↵家居危險，↵↵一定要通知所有親友。",
+    "context.data.selectedArticleId": "5623959580345-rumor",
+    "context.data.selectedReplyId": undefined,
+    "context.issuedAt": "2018-01-01T00:30:21.396Z",
+    "context.state": "CHOOSING_ARTICLE",
+    "input.message.text": "",
+    "output.context.data.selectedArticleId": "5623959580345-rumor",
+    "output.context.data.selectedReplyId": undefined,
+    "output.context.state": "ASKING_REPLY_FEEDBACK",
+    "output.replies": "這則回應認為文章含有不實訊息，理由為：↵汞中毒的症狀，不會帶來傷口不癒合跟壞死。↵傷口照片，專業醫師認為確實有可能是燈泡燙傷及碎片割傷，但傷口壞死應該是受其他因素影響，與水銀毒性無關；省電燈泡還是相當安全的。↵出處：http://www.nownews.com/n/2012/03/07/4420↵請問這則回應是否有解答原文章？↵「是」請輸入「y」，「否」請輸入其他任何訊息。↵可以到以下網址閱讀其他回應：https://cofacts.g0v.tw/article/5623959580345-rumor",
+    "timestamp": "2017-09-01T05:30:22.000Z",
+    "userId": undefined,
+    "userIdsha256": "1df029a6ca1b8f613b1513eb18ac79c85e5df3030b605eaf503d691a5735de8c",
+  },
+  "AV5mMF2xyCdS-nWhuf09": Object {
+    "context.data.searchedText": "常在外踏青的好友們要注意唷！↵恐怖！只要不小心碰到這種「國際雜草」，你的「鼻子」和「肝」就會開始產生病變…一定要記住他的「長相」，現在已經蔓延全台灣，安全島也很多。↵https://www.youtube.com/embed/kaMucfkJqkU ?↵這個在台中高美濕地很多哦！要小心。",
+    "context.data.selectedArticleId": "AV5mMF2xyCdS-nWhuf09",
+    "context.data.selectedReplyId": undefined,
+    "context.issuedAt": "2017-12-21T16:26:53.884Z",
+    "context.state": "ASKING_REPLY_FEEDBACK",
+    "input.message.text": "現職工程師提供↵↵再一次提醒!↵↵省電燈泡的危險性↵～LED 燈泡規則↵一個無知的舉動  ↵差點失去了生命↵破碎的燈泡↵絕對不能用吸塵器吸↵否則後果更嚴重！↵↵https://www.evernote.com/shard/s87/sh/99aee42d-976c-41dc-a0ad-a67148929c93/c72b1569d9fd2dcf ↵家居危險，↵↵一定要通知所有親友。",
+    "output.context.data.selectedArticleId": undefined,
+    "output.context.data.selectedReplyId": undefined,
+    "output.context.state": "CHOOSING_ARTICLE",
+    "output.replies": "幫您查詢「現職工程師提供↵↵再⋯⋯」的相關回應。↵請問下列文章中，哪一篇是您剛才傳送的訊息呢？↵選擇請打 1> 港燈現職工程師提供↵↵再一次提醒!↵↵省↵↵若以上皆非，請打 0。",
+    "timestamp": "2017-09-01T05:30:22.000Z",
+    "userId": undefined,
+    "userIdsha256": "1df029a6ca1b8f613b1513eb18ac79c85e5df3030b605eaf503d691a5735de8c",
+  },
+}
+`;
+
+exports[`parseToJson with sequential = true 1`] = `
+Object {
+  "context.data.searchedText": "常在外踏青的好友們要注意唷！↵恐怖！只要不小心碰到這種「國際雜草」，你的「鼻子」和「肝」就會開始產生病變…一定要記住他的「長相」，現在已經蔓延全台灣，安全島也很多。↵https://www.youtube.com/embed/kaMucfkJqkU ?↵這個在台中高美濕地很多哦！要小心。",
+  "context.data.selectedArticleId": "AV5mMF2xyCdS-nWhuf09",
+  "context.data.selectedReplyId": undefined,
+  "context.issuedAt": "2017-12-21T16:26:53.884Z",
+  "context.state": "ASKING_REPLY_FEEDBACK",
+  "input.message.text": "現職工程師提供↵↵再一次提醒!↵↵省電燈泡的危險性↵～LED 燈泡規則↵一個無知的舉動  ↵差點失去了生命↵破碎的燈泡↵絕對不能用吸塵器吸↵否則後果更嚴重！↵↵https://www.evernote.com/shard/s87/sh/99aee42d-976c-41dc-a0ad-a67148929c93/c72b1569d9fd2dcf ↵家居危險，↵↵一定要通知所有親友。",
+  "output.context.data.selectedArticleId": undefined,
+  "output.context.data.selectedReplyId": undefined,
+  "output.context.state": "CHOOSING_ARTICLE",
+  "output.replies": "幫您查詢「現職工程師提供↵↵再⋯⋯」的相關回應。↵請問下列文章中，哪一篇是您剛才傳送的訊息呢？↵選擇請打 1> 港燈現職工程師提供↵↵再一次提醒!↵↵省↵↵若以上皆非，請打 0。",
+  "timestamp": "2017-09-01T05:30:22.000Z",
+  "userId": undefined,
+  "userIdsha256": "1df029a6ca1b8f613b1513eb18ac79c85e5df3030b605eaf503d691a5735de8c",
+}
+`;
+
+exports[`parseToJson with sequential = true 2`] = `
+Object {
+  "context.data.searchedText": "現職工程師提供↵↵再一次提醒!↵↵省電燈泡的危險性↵～LED 燈泡規則↵一個無知的舉動  ↵差點失去了生命↵破碎的燈泡↵絕對不能用吸塵器吸↵否則後果更嚴重！↵↵https://www.evernote.com/shard/s87/sh/99aee42d-976c-41dc-a0ad-a67148929c93/c72b1569d9fd2dcf ↵家居危險，↵↵一定要通知所有親友。",
+  "context.data.selectedArticleId": "5623959580345-rumor",
+  "context.data.selectedReplyId": undefined,
+  "context.issuedAt": "2018-01-01T00:30:21.396Z",
+  "context.state": "CHOOSING_ARTICLE",
+  "input.message.text": "",
+  "output.context.data.selectedArticleId": "5623959580345-rumor",
+  "output.context.data.selectedReplyId": undefined,
+  "output.context.state": "ASKING_REPLY_FEEDBACK",
+  "output.replies": "這則回應認為文章含有不實訊息，理由為：↵汞中毒的症狀，不會帶來傷口不癒合跟壞死。↵傷口照片，專業醫師認為確實有可能是燈泡燙傷及碎片割傷，但傷口壞死應該是受其他因素影響，與水銀毒性無關；省電燈泡還是相當安全的。↵出處：http://www.nownews.com/n/2012/03/07/4420↵請問這則回應是否有解答原文章？↵「是」請輸入「y」，「否」請輸入其他任何訊息。↵可以到以下網址閱讀其他回應：https://cofacts.g0v.tw/article/5623959580345-rumor",
+  "timestamp": "2017-09-01T05:30:22.000Z",
+  "userId": undefined,
+  "userIdsha256": "1df029a6ca1b8f613b1513eb18ac79c85e5df3030b605eaf503d691a5735de8c",
+}
+`;
